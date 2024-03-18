@@ -1,0 +1,4 @@
+- name: Create NLE environment
+  shell: conda create -y --name nle --file environment.yml
+  args:
+    executable: /usr/bin/bash
