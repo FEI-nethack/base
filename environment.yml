@@ -1,4 +1,6 @@
 name: nle
 dependencies:
   - python=3.8
-  - nle
+  - pip
+  - pip:
+    - nle
