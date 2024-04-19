@@ -7,3 +7,14 @@ Para criar a imagem:
 ```shell
 docker build -t nle .
 ```
+
+## Criação de ambiente Conda (miniconda3)
+Usando o arquivo [environment.yml](environment.yml) (consultar [Explicação Environment](Documentação/environment.md)) é possível criar um ambiente padronizado no anaconda, com o seguinte comando:
+
+```
+conda env create -f environment.yml 
+```
+
+=======
+
+
