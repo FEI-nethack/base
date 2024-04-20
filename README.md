@@ -8,12 +8,16 @@ Para criar a imagem:
 docker build -t nle .
 ```
 ## Abrir python no docker depois de buildado
-1.Abrir o container
+1)Abrir o container
 ```
 docker run -it --rm nle bash
 ```
+1.1)Abrir container com os arquivos alocados na pasta "nle"
+```
+docker run --rm -it -v $(pwd):/nle nle bash
+```
 
-2.abrir o conda environment no container
+2)abrir o conda environment no container
 ```
 conda activate nle
 ```
