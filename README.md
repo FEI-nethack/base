@@ -16,7 +16,10 @@ docker run -it --rm nle bash
 ```
 docker run --rm -it -v $(pwd):/nle nle bash
 ```
-
+O código acima pode não funcionar as vezes, Quando for o caso, usar o código abaixo:
+```
+docker run --rm -it -v "$(pwd):/nle" nle bash
+```
 2)abrir o conda environment no container
 ```
 conda activate nle
