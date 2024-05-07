@@ -15,3 +15,5 @@ RUN apt update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN conda env create
+
+CMD conda run -n nle python main.py
