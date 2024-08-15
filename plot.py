@@ -3,7 +3,7 @@ import re
 import matplotlib.pyplot as plt
 
 # Directory containing the text files
-folder_path = 'Os_0_3'  # Change this to your folder path
+folder_path = 'output'  # Change this to your folder path
 
 # Initialize lists to store data
 all_episodes = []
@@ -50,7 +50,7 @@ for i, rewards in enumerate(all_rewards):
     plt.plot(all_episodes[i], rewards, label=f'Agente {i + 1}')
 plt.xlabel('Episódios')
 plt.ylabel('Recompensas totais')
-plt.title('Recompensas totais por Episódio (Parâmetros 2)')
+plt.title('Recompensas totais por Episódio (Parâmetros 3)')
 plt.legend()
 plt.grid(True)
 plt.savefig('total_rewards.png')
