@@ -1,0 +1,11 @@
+Episode 1: Total Reward = 0.87, Epsilon = 0.9950
+Episode 2: Total Reward = -0.16, Epsilon = 0.9900
+Episode 3: Total Reward = -0.26000000000000006, Epsilon = 0.9851
+Episode 4: Total Reward = 0.7999999999999999, Epsilon = 0.9801
+Episode 5: Total Reward = -0.17, Epsilon = 0.9752
+Episode 6: Total Reward = -0.45000000000000023, Epsilon = 0.9704
+Episode 7: Total Reward = 0.85, Epsilon = 0.9655
+Episode 8: Total Reward = -0.36000000000000015, Epsilon = 0.9607
+Episode 9: Total Reward = -0.23000000000000007, Epsilon = 0.9559
+Episode 10: Total Reward = 0.7799999999999999, Epsilon = 0.9511
+Episode 11: Total Reward = -0.02, Epsilon = 0.9464
