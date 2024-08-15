@@ -3,7 +3,7 @@ import re
 import matplotlib.pyplot as plt
 
 # Directory containing the text files
-folder_path = 'OLD'  # Change this to your folder path
+folder_path = 'Os_0_3'  # Change this to your folder path
 
 # Initialize lists to store data
 all_episodes = []
@@ -47,10 +47,10 @@ for filename in os.listdir(folder_path):
 # Plot Total Rewards
 plt.figure(figsize=(12, 6))
 for i, rewards in enumerate(all_rewards):
-    plt.plot(all_episodes[i], rewards, label=f'File {i + 1}')
-plt.xlabel('Episode')
-plt.ylabel('Total Reward')
-plt.title('Total Rewards per Episode from Different Files')
+    plt.plot(all_episodes[i], rewards, label=f'Agente {i + 1}')
+plt.xlabel('Episódios')
+plt.ylabel('Recompensas totais')
+plt.title('Recompensas totais por Episódio (Parâmetros 2)')
 plt.legend()
 plt.grid(True)
 plt.savefig('total_rewards.png')
@@ -59,8 +59,8 @@ plt.show()
 # Plot Epsilon Values
 plt.figure(figsize=(12, 6))
 for i, epsilons in enumerate(all_epsilon):
-    plt.plot(all_episodes[i], epsilons, label=f'File {i + 1}')
-plt.xlabel('Episode')
+    plt.plot(all_episodes[i], epsilons, label=f'Agente {i + 1}')
+plt.xlabel('Episódios')
 plt.ylabel('Epsilon')
 plt.title('Epsilon Values per Episode from Different Files')
 plt.legend()
