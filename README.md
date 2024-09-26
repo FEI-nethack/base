@@ -48,11 +48,11 @@ conda env create -f environment.yml
   sudo apt install -y python3-pip
   python3 --version
   ```
-## 2. Instalar Miniconda
-  ```
-  DOWNLOAD MINICONDA .SH FROM miniconda site
+## 2. Instalar Miniconda (baixar o .sh do site do miniconda) 
+  ```bash
   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /opt/miniconda-installer.sh
-  bash /opt/miniconda-installer.sh (COLOCAR O LOCAL DO INSTALADOR BAIXADO)
+  #ignorar a primeira linha acima caso ja tenha baixado o .sh do site
+  bash /opt/miniconda-installer.sh #(COLOCAR O LOCAL DO INSTALADOR BAIXADO)
   ```  
 ## 3. Ambiente conda e git
   ```
