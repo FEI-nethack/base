@@ -2,7 +2,7 @@
 
 Este repositório contém a base para a configuração do ambiente que será utilizado para o desenvolvimento do projeto. Ele possui apenas algumas formas de instalação do que é necessário, mas não contém nenhuma informação sobre as pesquisas realizadas sobre o ambiente
 
-# Uso do docker
+# Uso pelo docker <img align="left" alt="Docker" width="40px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" />
 Para criar a imagem:
 ```shell
 docker build -t nle .
@@ -35,5 +35,44 @@ Usando o arquivo [environment.yml](environment.yml) (consultar [Explicação Env
 conda env create -f environment.yml 
 ```
 
+# Uso da instalação direta pelo Linux <img align="left" alt="Linux" width="50px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
 
+## 1. Instalar Python 3 e Pip
+  ```  
+  sudo add-apt-repository ppa:deadsnakes/ppa
+  sudo apt update
+  sudo apt install python3
+  sudo apt install python3.10
+  python3 --version
+    
+  sudo apt install -y python3-pip
+  python3 --version
+  ```
+## 2. Instalar Miniconda
+  ```
+  DOWNLOAD MINICONDA .SH FROM miniconda site
+  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /opt/miniconda-installer.sh
+  bash /opt/miniconda-installer.sh (COLOCAR O LOCAL DO INSTALADOR BAIXADO)
+  ```  
+## 3. Ambiente conda e git
+  ```
+  conda create -n minihack python=3.8
+  conda activate minihack
+  sudo apt update
+  sudo apt install git
+  git --version
+  ```
+## 4. Pacotes
+  ```
+  sudo apt install cmake
+  cmake --version
+
+  sudo apt install libbz2-dev
+  sudo apt install bison flex
+  ```
+## 5. Instação NLE e Minihack
+  ```
+  pip install nle
+  pip install minihack
+  ```
 
